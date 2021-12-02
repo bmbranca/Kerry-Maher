@@ -30,7 +30,7 @@ body {
 
 .title h1 {
   letter-spacing: 2px;
-  font-size: 8rem;
+  font-size: 6rem;
   margin: 0;
   padding: 0;
 }
@@ -168,10 +168,6 @@ img {
   justify-content: column;
 }
 
-.info p {
-  margin-left: 50px;
-}
-
 .btn {
   background: #ff5100;
 }
@@ -211,8 +207,12 @@ footer {
   background: var(--dark);
   color: var(--light);
   text-align: center;
-  padding: 1rem;
-  font-size: 2rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+  margin: 0;
+  position: relative;
+  bottom: 0;
 }
 
 /* media queries */
@@ -222,6 +222,17 @@ footer {
   }
   .info {
     grid-template-columns: 1fr;
+  }
+
+  .title h1 {
+    letter-spacing: 2px;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-nav a {
+    font-size: 2rem;
   }
 
   .showcase {
@@ -235,11 +246,6 @@ footer {
       "showcase showcase"
       "top-box-a top-box-b";
   }
-
-  /* .showcase {
-    flex-direction: row;
-    justify-content: flex-end;
-  } */
 
   .showcase h1 {
     font-size: 2rem;
@@ -261,6 +267,10 @@ footer {
 
   .info-pic {
     display: none;
+  }
+
+  .info p {
+    font-size: 1rem;
   }
 }
 
